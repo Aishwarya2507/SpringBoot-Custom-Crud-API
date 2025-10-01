@@ -25,7 +25,37 @@ public class Department {
 
     private String location;
 
+    public Long getId() {
+        return id;
+    }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getDept_name() {
+        return dept_name;
+    }
+
+    public void setDept_name(String dept_name) {
+        this.dept_name = dept_name;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public List<Employee> getEmployees() {
+        return employees;
+    }
+
+    public void setEmployees(List<Employee> employees) {
+        this.employees = employees;
+    }
 
     // Declares that one Department has many Employees.
     // mappedBy:tells Hibernate which field in Employee entity owns relationship.
